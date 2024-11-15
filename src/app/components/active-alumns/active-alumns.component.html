@@ -1,0 +1,28 @@
+<div>
+    <h1>Alumnos Activos</h1>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>idAlumno</th>
+                <th>nombre</th>
+                <th>apellidos</th>
+                <th>imagen</th>
+                <th>activo</th>
+                <th>idCurso</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(alumno of alumnos; track alumno){
+                <tr>
+                    <td>{{alumno.idAlumno}}</td>
+                    <td>{{alumno.nombre}}</td>
+                    <td>{{alumno.apellidos}}</td>
+                    <td><img src="{{alumno.imagen}}" style="width: 100px;height: 100px;"/></td>
+                    <td>{{alumno.activo}}</td>
+                    <td>{{alumno.idCurso}}</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

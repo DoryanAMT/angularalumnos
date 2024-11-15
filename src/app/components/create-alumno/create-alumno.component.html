@@ -1,0 +1,19 @@
+<div>
+    <h1>Create Alumno</h1>
+
+    <form #alumnoFomr="ngForm">
+        <label>idalumno:</label>
+        <input type="number" #cajaidalumno name="cajaidalumno" class="form-control"/>
+        <label>nombre</label>
+        <input type="text" #cajanombre name="cajanombre" class="form-control"/>
+        <label>apellidos</label>
+        <input type="text" #cajaapellidos name="cajaapellidos" class="form-control"/>
+        <label>imagen</label>
+        <input type="text" #cajaimagen name="cajaimagen" class="form-control"/>
+        <label>activo</label>
+        <input type="number" #cajaactivo name="cajaactivo" class="form-control"/>
+        <label>idcurso</label>
+        <input type="number" #cajaidcurso name="cajaidcurso" class="form-control"/>
+        <button (click)="insertarAlumno()" class="btn btn-primary">Crear</button>
+    </form>
+</div>
